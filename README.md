@@ -31,7 +31,7 @@ You'll need three things:
 **Step 1: Clone and install**
 
 ```bash
-git clone <your-repo-url>
+git clone <this-repo>
 cd azure-stt-app-nextjs
 npm install
 ```
@@ -107,7 +107,7 @@ The speech recognition runs through a custom React hook that handles all the Azu
 
 The hook uses Azure Cognitive Services Speech SDK.
 
-**Want to see what's happening?** Open browser DevTools (F12) and check the console. Look for lines that start with `[STT]` — they'll show you every event from connection to transcription.
+**Want to see what's happening?** Open browser DevTools (F12) and check the console. Look for lines that start with `[STT]` : they'll show you every event from connection to transcription.
 
 ---
 
@@ -131,10 +131,10 @@ Check your browser settings. Make sure localhost can use your microphone.
 Double-check that `.env.local` exists and has the right values. Restart the dev server after making changes.
 
 **Connection failing?**  
-Make sure your Azure endpoint is correct and VoiceLive is enabled on your resource.
+Make sure your Azure endpoint is correct .
 
 **Mic is on but nothing's transcribing?**  
-Open DevTools and watch for `[STT]` logs. You should see "Speech started" when you talk. If you see that but no transcription, make sure you've deployed the `gpt-4o-mini-realtime-preview` model in your Azure resource.
+Open DevTools and watch for `[STT]` logs. 
 
 **No "Speech started" showing at all?**  
 Your audio might not be reaching the service. Check that nothing else is using your mic, try Chrome if you're on a different browser, and make sure you're not muted.
@@ -153,4 +153,4 @@ Your audio might not be reaching the service. Check that nothing else is using y
 
 ## License
 
-MIT — do whatever you want with it.
+MIT : do whatever you want with it.
