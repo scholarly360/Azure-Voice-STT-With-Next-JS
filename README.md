@@ -2,8 +2,9 @@
 
 Talk into your mic, get text on screen. Simple as that.
 
-This is a Next.js 16 app that turns speech into text using Azure's VoiceLive API. I built it with a clean white + blue theme and kept things minimal so you can focus on what matters.
+This is a Next.js 16 app that turns speech into text using Azure's Azure Cognitive Services Speech SDK . I built it with a clean white + blue theme and kept things minimal so you can focus on what matters.
 
+![A screenshot of the project](snip.png)
 ---
 
 ## What You Get
@@ -104,7 +105,7 @@ The speech recognition runs through a custom React hook that handles all the Azu
 - Picks up transcriptions as they come back
 - Drops the text into the editor
 
-The hook uses Whisper for transcription and Azure's semantic VAD (voice activity detection) so it knows when you start and stop talking.
+The hook uses Azure Cognitive Services Speech SDK.
 
 **Want to see what's happening?** Open browser DevTools (F12) and check the console. Look for lines that start with `[STT]` — they'll show you every event from connection to transcription.
 
@@ -143,7 +144,7 @@ Your audio might not be reaching the service. Check that nothing else is using y
 ## Built With
 
 - Next.js 16
-- Azure VoiceLive SDK
+- Azure Cognitive Services Speech SDK
 - shadcn/ui components
 - Tailwind CSS
 - TypeScript
